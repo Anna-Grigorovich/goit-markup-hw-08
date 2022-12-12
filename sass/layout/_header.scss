@@ -2,8 +2,16 @@
   text-decoration: none;
 }
 .header-nav {
-  display: flex;
-  gap: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+  }
 }
 .header-container {
   display: flex;
@@ -16,37 +24,73 @@
 .logo {
   font-family: var(--font-ral);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923em;
+  font-size: 20px;
+  line-height: calc(28 / 20);
   letter-spacing: 0.03em;
   color: #000000;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.1923em;
+  }
 }
 .header__logo {
-  margin-right: 93px;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 24px;
+    padding-top: 24px;
+    margin-right: 93px;
+  }
 }
 .logo__text {
   color: var(--color-blue);
 }
 .nav-contact__icon-envelope {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 .nav-contact__icon-smartphone {
   width: 10px;
-  height: 16px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
+.nav-contact {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+  }
+}
+
 .nav-contact__contacts {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428em;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
   letter-spacing: 0.02em;
 
   color: var(--color-gray);
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   display: flex;
   align-items: center;
@@ -62,12 +106,13 @@
     color: var(--color-blue);
     fill: var(--color-blue);
   }
-}
 
-.nav-contact {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.1428em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header-nav__link {
@@ -104,5 +149,15 @@
 
     background-color: var(--color-blue);
     border-radius: 2px;
+  }
+}
+.button_menu {
+  display: flex;
+  margin-left: auto;
+
+  background-color: #ffffff;
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

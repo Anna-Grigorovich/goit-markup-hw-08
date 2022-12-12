@@ -7,20 +7,32 @@
   padding: 60px 0px 60px;
 }
 .footer-container {
+  // display: flex;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo-footer {
-  display: inline-block;
-
+  // display: inline-block;
+  display: flex;
+  justify-content: center;
   font-family: var(--font-ral);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923em;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  // font-size: 26px;
+  // line-height: 1.1923em;
   letter-spacing: 0.03em;
 
   color: #ffffff;
 
   margin-bottom: 20px;
+}
+.footer-wrap {
+  display: flex;
+}
+.logo-wrap {
+  margin-right: 165px;
 }
 .adress {
   font-style: normal;
@@ -28,9 +40,13 @@
   line-height: 1.7142em;
   letter-spacing: 0.03em;
   color: #ffffff;
+  text-align: center;
   margin-bottom: 9px;
 }
-
+.footer-list {
+  text-align: center;
+  margin-bottom: 60px;
+}
 .footer-contact {
   font-style: normal;
   font-size: 14px;
@@ -53,16 +69,19 @@
 
   margin-bottom: 20px;
 }
-.footer-wrap {
+.soc-wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  align-items: center;
+  // margin-left: 70px;
   padding-top: 12px;
 }
 .footer-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
+
+  margin-bottom: 60px;
 }
 .footer-soc-item {
   padding: 0px;
@@ -79,14 +98,12 @@
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-&:focus {
-  background-color: var(--color-blue);
-  fill: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue);
+    fill: #ffffff;
+  }
 }
-}
-
-
 
 .icon-instagram {
   width: 20px;
@@ -95,21 +112,29 @@
 /*------------------ форма подвала------------------------------- */
 .footer-form {
   padding-top: 12px;
-  margin-left: 93px;
+  // margin-left: 93px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .form-send {
+  // display: flex;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-input {
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
-  min-width: 358px;
+  width: 290px;
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  margin-bottom: 20px;
+
   &:focus {
     border: 1px solid rgba(255, 255, 255, 0.3);
     outline: none;
@@ -123,7 +148,7 @@
   align-items: center;
   margin-left: 12px;
   height: 50px;
-  min-width: 200px;
+  max-width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;

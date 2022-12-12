@@ -1,4 +1,6 @@
 .hero {
+  display: flex;
+  align-items: center;
   background: var(--color-backgr-dark);
   background-image: linear-gradient(
       to right,
@@ -6,8 +8,10 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
-  max-width: 1600px;
-  max-height: 600px;
+  // max-width: 1600px;
+  // max-height: 600px;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
 
@@ -15,18 +19,37 @@
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    max-height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    max-height: 600px;
+  }
 }
 
 .main-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636em;
+  // font-size: 44px;
+  // line-height: 1.3636em;
+  font-size: 20px;
+  line-height: calc(42 / 20);
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 .btn-order {
   font-family: 'Roboto';
@@ -39,5 +62,8 @@
   border: none;
   border-radius: 4px;
 
-  padding: 10px 32px;
+  padding: 10px 24px;
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }
