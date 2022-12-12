@@ -917,6 +917,14 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .logo-footer {
   display: -webkit-box;
@@ -934,14 +942,22 @@ button {
   margin-bottom: 20px;
 }
 
-.footer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
-
-.logo-wrap {
-  margin-right: 165px;
+@media screen and (min-width: 768px) {
+  .logo-wrap {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-wrap {
+    margin-right: 70px;
+  }
 }
 
 .adress {
@@ -968,7 +984,12 @@ button {
 }
 
 .footer-item:first-child {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-item:first-child {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-text {
@@ -993,7 +1014,12 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 12px;
+  padding-top: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .soc-wrap {
+    margin-right: 93px;
+  }
 }
 
 .footer-soc-list {
@@ -1040,20 +1066,6 @@ button {
 }
 
 /*------------------ форма подвала------------------------------- */
-.footer-form {
-  padding-top: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .form-send {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,6 +1077,15 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .form-send {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .footer-input {
@@ -1085,6 +1106,16 @@ button {
   outline: none;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
+}
 
 .btn-footer {
   display: -webkit-box;
@@ -1096,7 +1127,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 12px;
   height: 50px;
   max-width: 200px;
   font-weight: 700;
@@ -1109,6 +1139,11 @@ button {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .btn-footer {
+    width: 200px;
+  }
 }
 
 .icon-send {
