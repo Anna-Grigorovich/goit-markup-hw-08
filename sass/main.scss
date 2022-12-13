@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/reset';
+@import './utils/mixsins';
 
 @import './base/common';
 
@@ -9,6 +10,7 @@
 @import './components/button';
 @import './components/section';
 @import './components/title';
+@import './components/menu';
 
 // index.html
 @import './layout/header';
